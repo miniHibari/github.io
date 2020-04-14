@@ -250,6 +250,126 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/14/NOSQL%E5%AD%A6%E4%B9%A0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Hibari">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hibari 博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2020/04/14/NOSQL%E5%AD%A6%E4%B9%A0/" itemprop="url">
+                  NOSQL学习
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-04-14T20:05:41+08:00">
+                2020-04-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="一、传统数据库的ACID分别是什么"><a href="#一、传统数据库的ACID分别是什么" class="headerlink" title="一、传统数据库的ACID分别是什么"></a>一、传统数据库的ACID分别是什么</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">A(Atomicity) 原子性</span><br><span class="line">C(Consistency) 一致性</span><br><span class="line">I(Isolation) 独立性</span><br><span class="line">D(Durability) 持久性</span><br></pre></td></tr></table></figure>
+
+<h3 id="一、NOSQL-的CAP分别是什么"><a href="#一、NOSQL-的CAP分别是什么" class="headerlink" title="一、NOSQL 的CAP分别是什么"></a>一、NOSQL 的CAP分别是什么</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">C:Consistency(强一致性)</span><br><span class="line">A:Availability（可用性）</span><br><span class="line">P:Partition tolerance（分区容错性）</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/02/jvm%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E6%B7%B1%E5%85%A5%E5%8E%9F%E7%90%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -330,6 +450,8 @@
             <h3 id="一、什么是JVM"><a href="#一、什么是JVM" class="headerlink" title="一、什么是JVM"></a>一、什么是JVM</h3><p>JVM是Java virtual Machine(Java虚拟机)的缩写，是通过在实际的计算机上仿真模拟各种计算机功能来实现的。由<strong>一套字节码指令集、一组寄存器、一个栈、一个垃圾回收堆和一个存储方法域</strong>组成。JVM屏蔽了与操作系统平台相关的信息，使得java程序只需要生成在java虚拟机上运行的目标代码(字节码),就可在多种平台上不加修改的运行，这就是java能够”一次编译，到处运行”原因。</p>
 <hr>
 <h3 id="二、-JRE-JDK-JVM-的关系"><a href="#二、-JRE-JDK-JVM-的关系" class="headerlink" title="二、 JRE JDK JVM 的关系"></a>二、 JRE JDK JVM 的关系</h3><p>JRE(Java Runtime Environment,JAVA的运行环境) 是java平台，所有的程序都要在JRE下才能够运行。包括JVM和Java核心类库和支持文件。</p>
+<p>JDK（Java Development Kit，Java开发工具包）是用来编译、调试Java程序的开发工具包。包括Java工具（javac/java/jdb等）和Java基础的类库（java API ）</p>
+<p>JVM（Java Virtual Machine， Java虚拟机）是JRE的一部分。JVM主要工作是解释自己的指令集（即字节码）并映射到本地的CPU指令集和OS的系统调用。Java语言是跨平台运行的，不同的操作系统会有不同的JVM映射规则，使之与操作系统无关，完成跨平台性。</p>
 
           
         
@@ -896,7 +1018,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -907,7 +1029,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
