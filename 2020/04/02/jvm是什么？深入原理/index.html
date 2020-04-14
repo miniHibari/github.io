@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="java," />
 
 
 
@@ -87,14 +87,16 @@
 
 
 
-<meta name="description" content="Hibari的博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hibari 博客">
-<meta property="og:url" content="http://yoursite.com/tags/java/index.html">
+<meta name="description" content="一、什么是JVMJVM是Java virtual Machine(Java虚拟机)的缩写，是通过在实际的计算机上仿真模拟各种计算机功能来实现的。由一套字节码指令集、一组寄存器、一个栈、一个垃圾回收堆和一个存储方法域组成。JVM屏蔽了与操作系统平台相关的信息，使得java程序只需要生成在java虚拟机上运行的目标代码(字节码),就可在多种平台上不加修改的运行，这就是java能够”一次编译，到处运行”">
+<meta property="og:type" content="article">
+<meta property="og:title" content="jvm是什么？以及原理">
+<meta property="og:url" content="http://yoursite.com/2020/04/02/jvm%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E6%B7%B1%E5%85%A5%E5%8E%9F%E7%90%86/index.html">
 <meta property="og:site_name" content="Hibari 博客">
-<meta property="og:description" content="Hibari的博客">
+<meta property="og:description" content="一、什么是JVMJVM是Java virtual Machine(Java虚拟机)的缩写，是通过在实际的计算机上仿真模拟各种计算机功能来实现的。由一套字节码指令集、一组寄存器、一个栈、一个垃圾回收堆和一个存储方法域组成。JVM屏蔽了与操作系统平台相关的信息，使得java程序只需要生成在java虚拟机上运行的目标代码(字节码),就可在多种平台上不加修改的运行，这就是java能够”一次编译，到处运行”">
+<meta property="article:published_time" content="2020-04-02T11:05:23.000Z">
+<meta property="article:modified_time" content="2020-04-02T11:36:47.509Z">
 <meta property="article:author" content="Hibari">
-<meta property="article:tag" content="Hibari">
+<meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary">
 
 
@@ -123,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/java/"/>
+  <link rel="canonical" href="http://yoursite.com/2020/04/02/jvm是什么？深入原理/"/>
 
 
 
 
 
-  <title> 标签: java | Hibari 博客 </title>
+  <title> jvm是什么？以及原理 | Hibari 博客 </title>
 <meta name="generator" content="Hexo 4.2.0"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -154,7 +156,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -238,74 +240,152 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        java
-        <small>标签</small>
-      </h2>
-    </div>
-
+  <div id="posts" class="posts-expand">
     
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2020/04/02/jvm%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E6%B7%B1%E5%85%A5%E5%8E%9F%E7%90%86/" itemprop="url">
-              
-                <span itemprop="name">jvm是什么？以及原理</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-04-02T19:05:23+08:00"
-              content="2020-04-02" >
-          04-02
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2020/03/26/java%E5%9F%BA%E7%A1%80%E5%AD%A6%E4%B9%A0/" itemprop="url">
-              
-                <span itemprop="name">java基础学习</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2020-03-26T11:05:47+08:00"
-              content="2020-03-26" >
-          03-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-  </div>
 
   
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/02/jvm%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E6%B7%B1%E5%85%A5%E5%8E%9F%E7%90%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Hibari">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hibari 博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                jvm是什么？以及原理
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-04-02T19:05:23+08:00">
+                2020-04-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="一、什么是JVM"><a href="#一、什么是JVM" class="headerlink" title="一、什么是JVM"></a>一、什么是JVM</h3><p>JVM是Java virtual Machine(Java虚拟机)的缩写，是通过在实际的计算机上仿真模拟各种计算机功能来实现的。由<strong>一套字节码指令集、一组寄存器、一个栈、一个垃圾回收堆和一个存储方法域</strong>组成。JVM屏蔽了与操作系统平台相关的信息，使得java程序只需要生成在java虚拟机上运行的目标代码(字节码),就可在多种平台上不加修改的运行，这就是java能够”一次编译，到处运行”原因。</p>
+<hr>
+<h3 id="二、-JRE-JDK-JVM-的关系"><a href="#二、-JRE-JDK-JVM-的关系" class="headerlink" title="二、 JRE JDK JVM 的关系"></a>二、 JRE JDK JVM 的关系</h3><p>JRE(Java Runtime Environment,JAVA的运行环境) 是java平台，所有的程序都要在JRE下才能够运行。包括JVM和Java核心类库和支持文件。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/java/" rel="tag"># java</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2020/03/30/%E5%89%8D%E7%AB%AF%E9%9D%A2%E8%AF%95%E9%97%AE%E9%A2%98/" rel="next" title="前端面试问题">
+                <i class="fa fa-chevron-left"></i> 前端面试问题
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
           
           </div>
@@ -313,6 +393,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -332,8 +416,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -384,6 +477,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、什么是JVM"><span class="nav-number">1.</span> <span class="nav-text">一、什么是JVM</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、-JRE-JDK-JVM-的关系"><span class="nav-number">2.</span> <span class="nav-text">二、 JRE JDK JVM 的关系</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -489,6 +598,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
